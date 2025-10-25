@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             groupBoxTask_DAS = new GroupBox();
+            pictureBoxFormula_DAS = new PictureBox();
             textBoxTask_DAS = new TextBox();
             groupBoxVars_DAS = new GroupBox();
             labelVarX_DAS = new Label();
@@ -38,11 +39,10 @@
             textBoxResult_DAS = new TextBox();
             buttonDone_DAS = new Button();
             buttonHelp_DAS = new Button();
-            pictureBoxFormula_DAS = new PictureBox();
             groupBoxTask_DAS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_DAS).BeginInit();
             groupBoxVars_DAS.SuspendLayout();
             groupBoxResult_DAS.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_DAS).BeginInit();
             SuspendLayout();
             // 
             // groupBoxTask_DAS
@@ -55,6 +55,15 @@
             groupBoxTask_DAS.TabIndex = 0;
             groupBoxTask_DAS.TabStop = false;
             groupBoxTask_DAS.Text = "Условие";
+            // 
+            // pictureBoxFormula_DAS
+            // 
+            pictureBoxFormula_DAS.Image = Properties.Resources.Formula;
+            pictureBoxFormula_DAS.Location = new Point(529, 31);
+            pictureBoxFormula_DAS.Name = "pictureBoxFormula_DAS";
+            pictureBoxFormula_DAS.Size = new Size(192, 86);
+            pictureBoxFormula_DAS.TabIndex = 1;
+            pictureBoxFormula_DAS.TabStop = false;
             // 
             // textBoxTask_DAS
             // 
@@ -142,15 +151,6 @@
             buttonHelp_DAS.UseVisualStyleBackColor = true;
             buttonHelp_DAS.Click += buttonHelp_DAS_Click;
             // 
-            // pictureBoxFormula_DAS
-            // 
-            pictureBoxFormula_DAS.Image = Properties.Resources.Formula;
-            pictureBoxFormula_DAS.Location = new Point(529, 31);
-            pictureBoxFormula_DAS.Name = "pictureBoxFormula_DAS";
-            pictureBoxFormula_DAS.Size = new Size(192, 86);
-            pictureBoxFormula_DAS.TabIndex = 1;
-            pictureBoxFormula_DAS.TabStop = false;
-            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -161,16 +161,18 @@
             Controls.Add(groupBoxResult_DAS);
             Controls.Add(groupBoxVars_DAS);
             Controls.Add(groupBoxTask_DAS);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            MaximizeBox = false;
             Name = "FormMain";
             Text = "Спринт #6 | Таск 0 | Вариант 14 | Данилов А.С. ";
             Load += Form1_Load;
             groupBoxTask_DAS.ResumeLayout(false);
             groupBoxTask_DAS.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_DAS).EndInit();
             groupBoxVars_DAS.ResumeLayout(false);
             groupBoxVars_DAS.PerformLayout();
             groupBoxResult_DAS.ResumeLayout(false);
             groupBoxResult_DAS.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_DAS).EndInit();
             ResumeLayout(false);
         }
 
