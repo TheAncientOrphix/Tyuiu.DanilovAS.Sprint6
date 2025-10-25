@@ -15,17 +15,17 @@ namespace Tyuiu.DanilovAS.Sprint6.Task1.V14.Test
             int len = (stopValue - startValue)+1;
 
             double[] waitArray = new double[len];
-            waitArray[0] = -2.152;
-            waitArray[1] = -2.570;
-            waitArray[2] = -3;
-            waitArray[3] = -3.828;
-            waitArray[4] = -11.701;
-            waitArray[5] = 3.000;
-            waitArray[6] = 2.194;
-            waitArray[7] = 3.314;
+            waitArray[0] = -2.15;
+            waitArray[1] = -2.57;
+            waitArray[2] = -3.00;
+            waitArray[3] = -3.83;
+            waitArray[4] = -11.70;
+            waitArray[5] = 3.00;
+            waitArray[6] = 2.19;
+            waitArray[7] = 3.31;
             waitArray[8] = 2.97;
-            waitArray[9] = 1.184;
-            waitArray[10] = 0.028;
+            waitArray[9] = 1.18;
+            waitArray[10] = 0.03;
 
             double[] resultArray = ds.GetMassFunction(startValue, stopValue);
 

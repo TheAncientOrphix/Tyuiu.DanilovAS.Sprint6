@@ -17,7 +17,7 @@ namespace Tyuiu.DanilovAS.Sprint6.Task1.V14.Lib
                 if ((Math.Cos(i) + i) != 0)
                 {
                     function = (2 * i + 6) / (Math.Cos(i) + i) - 3;
-                    result[count] = Math.Round(function,3);
+                    result[count] = Math.Round(function,2);
                 }
                 else
                 {
