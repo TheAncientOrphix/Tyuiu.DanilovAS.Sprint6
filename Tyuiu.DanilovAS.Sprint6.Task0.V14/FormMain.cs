@@ -20,6 +20,7 @@ namespace Tyuiu.DanilovAS.Sprint6.Task0.V14
             {
                 textBoxResult_DAS.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxInPutX_DAS.Text)));
             }
+
             catch
             {
                 MessageBox.Show("¬ведены неверные данные", "ќшибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
