@@ -8,12 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Chart.js" Version="3.7.1" />
+    <PackageReference Include="FastReport.DataVisualization" Version="2026.1.2" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.0" />
     <PackageReference Include="MSTest" Version="4.0.1" />
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="30.2.4" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.DanilovAS.Sprint6.Task1.V14.Lib\Tyuiu.DanilovAS.Sprint6.Task1.V14.Lib.csproj" />
+    <ProjectReference Include="..\Tyuiu.DanilovAS.Sprint6.Task2.V25.Lib\Tyuiu.DanilovAS.Sprint6.Task2.V25.Lib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
