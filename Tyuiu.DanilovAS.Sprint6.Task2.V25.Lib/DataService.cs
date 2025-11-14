@@ -16,7 +16,7 @@ namespace Tyuiu.DanilovAS.Sprint6.Task2.V25.Lib
                 if ((Math.Sin(i) - 2) != 0)
                 {
                     y = (5 * i + 2.5) / (Math.Sin(i) - 2) + 2;
-                    y = Math.Round(y, 3);
+                    y = Math.Round(y, 2);
                 }
                 else
                 {
