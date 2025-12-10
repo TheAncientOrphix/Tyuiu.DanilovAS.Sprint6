@@ -1,3 +1,4 @@
+using System.Windows.Forms;
 using Tyuiu.DanilovAS.Sprint6.Task5.V14.Lib;
 namespace Tyuiu.DanilovAS.Sprint6.Task5.V14
 {
@@ -15,8 +16,11 @@ namespace Tyuiu.DanilovAS.Sprint6.Task5.V14
         private void buttonDone_DAS_Click(object sender, EventArgs e)
         {
             dataGridViewResult_DAS.ColumnCount = 2;
-            dataGridViewResult_DAS.Columns[0].Width = 30;
-            dataGridViewResult_DAS.Columns[1].Width = 70;
+            //dataGridViewResult_DAS.Columns[0].Width = 30;
+            //dataGridViewResult_DAS.Columns[1].Width = 70;
+
+            dataGridViewResult_DAS.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewResult_DAS.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
             this.chartResult_DAS.ChartAreas[0].AxisX.Title = "Îñü Õ";
             this.chartResult_DAS.ChartAreas[0].AxisY.Title = "Îñü Y";
