@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            FastReport.DataVisualization.Charting.Series series2 = new FastReport.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             groupBoxTaskInfo_DAS = new GroupBox();
             labelTaskInfo_DAS = new Label();
             groupBoxInPutVars_DAS = new GroupBox();
@@ -38,7 +40,7 @@
             labelVarStopValue_DAS = new Label();
             labelVarStartValue_DAS = new Label();
             groupBoxOutPut_DAS = new GroupBox();
-            chartOutPutResult_DAS = new FastReport.DataVisualization.Charting.Chart();
+            chartOutPutResult_DAS = new System.Windows.Forms.DataVisualization.Charting.Chart();
             labelOutPutResult_DAS = new Label();
             dataGridViewOutPutResult_DAS = new DataGridView();
             X = new DataGridViewTextBoxColumn();
@@ -132,14 +134,22 @@
             // 
             // chartOutPutResult_DAS
             // 
-            chartOutPutResult_DAS.Location = new Point(196, 59);
+            chartArea1.Name = "ChartArea1";
+            chartOutPutResult_DAS.ChartAreas.Add(chartArea1);
+            legend1.Enabled = false;
+            legend1.Name = "Legend1";
+            chartOutPutResult_DAS.Legends.Add(legend1);
+            chartOutPutResult_DAS.Location = new Point(209, 47);
             chartOutPutResult_DAS.Name = "chartOutPutResult_DAS";
-            series2.ChartType = FastReport.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.IsVisibleInLegend = false;
-            series2.Name = "Series1";
-            chartOutPutResult_DAS.Series.Add(series2);
-            chartOutPutResult_DAS.Size = new Size(388, 348);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            chartOutPutResult_DAS.Series.Add(series1);
+            chartOutPutResult_DAS.Size = new Size(375, 375);
             chartOutPutResult_DAS.TabIndex = 2;
+            chartOutPutResult_DAS.Text = "chart1";
             // 
             // labelOutPutResult_DAS
             // 
@@ -238,10 +248,10 @@
         private Label labelVarStartValue_DAS;
         private Label labelOutPutResult_DAS;
         private DataGridView dataGridViewOutPutResult_DAS;
-        private FastReport.DataVisualization.Charting.Chart chartOutPutResult_DAS;
         private TextBox textBoxStopValue_DAS;
         private TextBox textBoxStartValue_DAS;
         private DataGridViewTextBoxColumn X;
         private DataGridViewTextBoxColumn F;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartOutPutResult_DAS;
     }
 }

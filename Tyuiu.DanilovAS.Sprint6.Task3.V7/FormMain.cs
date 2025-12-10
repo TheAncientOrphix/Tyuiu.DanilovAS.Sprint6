@@ -28,7 +28,7 @@ namespace Tyuiu.DanilovAS.Sprint6.Task3.V7
         {
 
             //textBoxResult_DAS.Text = Convert.ToString(ds.Calculate(mtrx));
-            textBoxResult_DAS.Text = "Результат в матрице";
+            textBoxResult_DAS.Text = "Матрица изменена!";
 
             int rows = mtrx.GetUpperBound(0) + 1;
             int columns = mtrx.Length / rows;

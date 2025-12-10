@@ -117,20 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="labelTaskInfo_DAS.Text" xml:space="preserve">
-    <value>Написать программу, которая выводит таблицу значений
-функции: F(x) = 5x + 2.5 / (Sin(x)-2) +2
-(произвести табулирование) f(x) на заданном диапазоне [-5; 5]
-с шагом 1. Произвести проверку деления на ноль.
-При делении на ноль вернуть значение 0.
-Значения занести в DataGridView
-Значения округлить до двух знаков после запятой
-</value>
-  </data>
-  <metadata name="X.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="F.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>
