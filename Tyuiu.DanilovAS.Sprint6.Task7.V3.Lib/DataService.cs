@@ -22,18 +22,12 @@ namespace Tyuiu.DanilovAS.Sprint6.Task7.V3.Lib
                     array[i, j] = Convert.ToInt32(line_mas[j]);
                 }
             }
-             
-            int rows_1 = array.GetUpperBound(0) + 1;
-            int columns_1 = array.GetUpperBound(1) + 1;
-            
-            for(int r = 0; r < rows; r++)
+
+            for (int r = 0; r < rows; r++)
             {
-                for(int c = 0; c < columns; c++)
+                if (array[r, 1] % 2 == 0)
                 {
-                    if (array[r,1] %2 == 0)
-                    {
-                        array[r, 1] = -1;
-                    }
+                    array[r, 1] = -1;
                 }
             }
             return array;
