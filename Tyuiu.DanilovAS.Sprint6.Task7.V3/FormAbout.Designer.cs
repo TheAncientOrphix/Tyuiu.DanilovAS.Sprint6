@@ -37,7 +37,7 @@
             // 
             // pictureBoxAvatar_DAS
             // 
-            pictureBoxAvatar_DAS.Image = Properties.Resources.Avatar;
+            pictureBoxAvatar_DAS.Image = (Image)resources.GetObject("pictureBoxAvatar_DAS.Image");
             pictureBoxAvatar_DAS.Location = new Point(12, 22);
             pictureBoxAvatar_DAS.Name = "pictureBoxAvatar_DAS";
             pictureBoxAvatar_DAS.Size = new Size(202, 217);

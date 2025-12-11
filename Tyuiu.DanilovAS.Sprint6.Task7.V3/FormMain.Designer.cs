@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             panelButtons_DAS = new Panel();
             buttonSave_DAS = new Button();
             buttonHelp_DAS = new Button();
@@ -73,7 +74,7 @@
             // buttonSave_DAS
             // 
             buttonSave_DAS.Enabled = false;
-            buttonSave_DAS.Image = Properties.Resources.page_save;
+            buttonSave_DAS.Image = (Image)resources.GetObject("buttonSave_DAS.Image");
             buttonSave_DAS.Location = new Point(163, 6);
             buttonSave_DAS.Name = "buttonSave_DAS";
             buttonSave_DAS.Size = new Size(74, 56);
@@ -85,7 +86,7 @@
             // buttonHelp_DAS
             // 
             buttonHelp_DAS.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            buttonHelp_DAS.Image = Properties.Resources.help;
+            buttonHelp_DAS.Image = (Image)resources.GetObject("buttonHelp_DAS.Image");
             buttonHelp_DAS.Location = new Point(1012, 6);
             buttonHelp_DAS.Name = "buttonHelp_DAS";
             buttonHelp_DAS.Size = new Size(74, 56);
@@ -97,7 +98,7 @@
             // buttonDone_DAS
             // 
             buttonDone_DAS.Enabled = false;
-            buttonDone_DAS.Image = Properties.Resources.page_go;
+            buttonDone_DAS.Image = (Image)resources.GetObject("buttonDone_DAS.Image");
             buttonDone_DAS.Location = new Point(83, 6);
             buttonDone_DAS.Name = "buttonDone_DAS";
             buttonDone_DAS.Size = new Size(74, 56);
@@ -108,7 +109,7 @@
             // 
             // buttonOpenFile_DAS
             // 
-            buttonOpenFile_DAS.Image = Properties.Resources.folder_page;
+            buttonOpenFile_DAS.Image = (Image)resources.GetObject("buttonOpenFile_DAS.Image");
             buttonOpenFile_DAS.Location = new Point(3, 6);
             buttonOpenFile_DAS.Name = "buttonOpenFile_DAS";
             buttonOpenFile_DAS.Size = new Size(74, 56);
