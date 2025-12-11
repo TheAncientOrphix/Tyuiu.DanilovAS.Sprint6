@@ -235,7 +235,6 @@
             MinimumSize = new Size(1116, 550);
             Name = "FormMain";
             Text = "Спринт #6 | Таск 7 | Вариант 3 | Данилов А.С";
-            Load += FormMain_Load;
             panelButtons_DAS.ResumeLayout(false);
             panelTaskInfo_DAS.ResumeLayout(false);
             groupBoxTask_DAS.ResumeLayout(false);

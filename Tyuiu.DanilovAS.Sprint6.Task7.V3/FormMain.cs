@@ -73,15 +73,6 @@ namespace Tyuiu.DanilovAS.Sprint6.Task7.V3
             buttonDone_DAS.Enabled = true;
         }
 
-        private void FormMain_Load(object sender, EventArgs e)
-        {
-            dataGridViewInPut_DAS.ColumnCount = 25;
-            dataGridViewOutPut_DAS.ColumnCount = 25;
-
-            dataGridViewInPut_DAS.RowCount = 25;
-            dataGridViewOutPut_DAS.RowCount = 25;
-        }
-
         private void buttonDone_DAS_Click(object sender, EventArgs e)
         {
             int[,] arrayValues = new int[rows, columns];
