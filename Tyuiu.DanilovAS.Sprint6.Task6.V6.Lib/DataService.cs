@@ -19,7 +19,7 @@ namespace Tyuiu.DanilovAS.Sprint6.Task6.V6.Lib
                     foreach (string word in words)
                     {
                         // Проверяем, содержит ли слово букву 'b' или 'B'
-                        if (word.Contains('b') || word.Contains('B'))
+                        if (word.Contains('b'))
                         {
                             foundWords.Add(word);
                         }
