@@ -25,7 +25,7 @@ namespace Tyuiu.DanilovAS.Sprint6.Task7.V3.Lib
 
             for(int r = 0; r < rows; r++)
             {
-                for(int c = 2; c <= 2; c++)
+                for(int c = 0; c <= 0; c++)
                 {
                     if(array[r, c] %2 == 0)
                     {
