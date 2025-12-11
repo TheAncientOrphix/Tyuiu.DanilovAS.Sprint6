@@ -75,11 +75,11 @@ namespace Tyuiu.DanilovAS.Sprint6.Task7.V3
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            dataGridViewInPut_DAS.ColumnCount = 50;
-            dataGridViewOutPut_DAS.ColumnCount = 50;
+            dataGridViewInPut_DAS.ColumnCount = 25;
+            dataGridViewOutPut_DAS.ColumnCount = 25;
 
-            dataGridViewInPut_DAS.RowCount = 50;
-            dataGridViewOutPut_DAS.RowCount = 50;
+            dataGridViewInPut_DAS.RowCount = 25;
+            dataGridViewOutPut_DAS.RowCount = 25;
         }
 
         private void buttonDone_DAS_Click(object sender, EventArgs e)
@@ -115,7 +115,6 @@ namespace Tyuiu.DanilovAS.Sprint6.Task7.V3
 
             int rows = dataGridViewOutPut_DAS.RowCount;
             int columns = dataGridViewOutPut_DAS.ColumnCount;
-
             string str = "";
 
             for(int i = 0; i < rows; i++)

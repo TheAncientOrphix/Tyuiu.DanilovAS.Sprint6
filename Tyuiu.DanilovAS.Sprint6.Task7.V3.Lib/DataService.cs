@@ -23,11 +23,14 @@ namespace Tyuiu.DanilovAS.Sprint6.Task7.V3.Lib
                 }
             }
 
-            for (int r = 0; r < rows; r++)
+            for(int r = 0; r < rows; r++)
             {
-                if (array[r, 1] % 2 == 0)
+                for(int c = 1; c <= 1; c++)
                 {
-                    array[r, 1] = -1;
+                    if(array[r, c] %2 == 0)
+                    {
+                        array[r, c] = -1;
+                    }
                 }
             }
             return array;
